@@ -46,6 +46,11 @@ public class Palavras : MonoBehaviour
             int ID = ListaPalavras.IndexOf(palavra);
             Achados[ID] = true;
             Textos[ID].color = Color.green;
+
+            if (!Achados.Contains(false))
+            {
+                SceneM.manager.NextScene();
+            }
         }
     }
 }
