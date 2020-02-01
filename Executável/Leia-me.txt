@@ -1,0 +1,3 @@
+Um erro que aconteçe raramente pode aconteçer que faça alguma das palavras não seja gerada, não consegui reproduzi-lo, mas reiniciar o jogo deve resolver o problema.
+
+Existem 4 possíveis temas e diversas palavras para cada tema, de uma fase para outra é possível que o tema se repita, mas as palavras ainda podem ser diferentes

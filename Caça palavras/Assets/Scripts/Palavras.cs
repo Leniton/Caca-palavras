@@ -4,11 +4,29 @@ using UnityEngine;
 using TMPro;
 public class Palavras : MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI TemaTexto;
     [SerializeField] GameObject TextoBase;
     List<TextMeshProUGUI> Textos = new List<TextMeshProUGUI>();
     [Space]
+    Temas tema;
     [SerializeField] List<string> ListaPalavras = new List<string>();
     [SerializeField]List<bool> Achados = new List<bool>();
+
+    void Awake()
+    {
+        tema = SceneM.manager.GetComponent<Lista_Temas>().PegarTema();
+        TemaTexto.text = tema.name;
+        ListaPalavras = tema.Palavras;
+
+        if (ListaPalavras.Count > 6)
+        {
+            int QuantidadeaRemover = ListaPalavras.Count - 6;
+            for (int i = 0; i < QuantidadeaRemover; i++)
+            {
+                ListaPalavras.RemoveAt(Random.Range(0, ListaPalavras.Count));
+            }
+        }
+    }
 
     void Start()
     {

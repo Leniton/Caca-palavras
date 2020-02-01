@@ -807,6 +807,10 @@ PrefabInstance:
       propertyPath: TextoBase
       value: 
       objectReference: {fileID: 258510749}
+    - target: {fileID: 923232228, guid: 618123925a9cae04694d7b1c0d1741c3, type: 3}
+      propertyPath: TemaTexto
+      value: 
+      objectReference: {fileID: 1763287549}
     - target: {fileID: 6953593851270698879, guid: 618123925a9cae04694d7b1c0d1741c3,
         type: 3}
       propertyPath: m_fontSize
