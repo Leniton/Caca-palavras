@@ -28,6 +28,7 @@ public class SceneM : MonoBehaviour
 
     public void LoadScene(int sceneID)
     {
+        Next = sceneID + 1;
         SceneManager.LoadScene(sceneID);
     }
 

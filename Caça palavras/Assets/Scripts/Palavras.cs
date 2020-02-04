@@ -4,6 +4,8 @@ using UnityEngine;
 using TMPro;
 public class Palavras : MonoBehaviour
 {
+    [SerializeField] GameObject Fim;
+
     [SerializeField] TextMeshProUGUI TemaTexto;
     [SerializeField] GameObject TextoBase;
     List<TextMeshProUGUI> Textos = new List<TextMeshProUGUI>();
@@ -67,7 +69,7 @@ public class Palavras : MonoBehaviour
 
             if (!Achados.Contains(false))
             {
-                SceneM.manager.NextScene();
+                Fim.SetActive(true);
             }
         }
     }
